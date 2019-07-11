@@ -52,12 +52,11 @@ Clone the repo.
 
     git clone https://github.com/skriegman/2019-RSS.git
 
-There are different well documented examples (evosoro/examples) and custom versions of VoxCad/Voxelyze included in this repository (evosoro/_voxcad* folders).
-Let's try running an example in which soft robots are optimized to locomote in a terrestrial environment, using an evolutionary algorithm and a basic version (_voxcad) of the physics engine (the procedure is the same for all the examples). 
+Let's try running one of the experiments from the paper.
 
 Navigate to the _voxcad directory:
 
-    cd evosoro/evosoro/_voxcad/
+    cd 2019-RSS/evosoro/_voxcad/
 
 The following command compiles both VoxCad and Voxelyze, installing the library at the same time:
 
@@ -80,11 +79,11 @@ Navigate back out to the exp folder and run one of the *.py with two args (seed 
     cd ../exp
     python RSS_0B_Half_Leg_XYZDB.py 1 1
 
-You should start seeing some output being produced in your console, and a new directory being created (~/evosoro/evosoro/run_1), which contains the results of the simulation.
+You should start seeing some output being produced in your console, and a new directory being created (~/2019-RSS/evosoro/run_1), which contains the results of the simulation.
 
 
 After allowing the experiment to run for a few generations, you can view the shape/controller adaptation by opening up the generated .vxa files within the VoxCAD GUI. A .vxa file is just an XML file representing a robot that can be simulated by VoxCad/Voxelyze. Different versions of the physics engine can play slightly different .vxa files.
-Navigate to evosoro/evosoro/_voxcad/release:
+Navigate to 2019-RSS/evosoro/_voxcad/release:
     
     cd ../_voxcad/release
     
@@ -98,7 +97,7 @@ Then select the desired .vxa file from
 
 The .vxa files for the best performing individuals will be saved in
 
-    evosoro/evosoro/exp/run_1/bestSoFar/fitOnly.
+    2019-RSS/evosoro/exp/run_1/bestSoFar/fitOnly.
 
 Once the design is loaded, you can start the physics simulation by clicking the <img src="https://github.com/skriegman/evosoro/blob/master/evosoro/_voxcad/VoxCad/Icons/Sandbox.png" height="25" width="25"> icon in the top bar ("Physics Sandbox").  The robot should start moving: if it doesn't, please check the following section (Known issues).
 
@@ -109,7 +108,7 @@ Known issues
 If the robot does not move, disappears, or seems to behave in an unexpected manner when running a .vxa file in VoxCad (GUI), you may be affected by a known problem observed on some non-US machines.
 The problem is due to an unexpected behavior of the <a href="http://www.cplusplus.com/reference/cstdlib/atof/">atof</a> function when the system's numeric <a href="https://en.wikipedia.org/wiki/Locale_(computer_software)">locale</a> differs from en_US.UTF-8, which entails loading wrong parameters from the .vxa file (in some cases it was observed how the atof function was approximating all double and floating point values to their integer part, which was the cause of the unexpected behavior).
 
-While we work on a better solution, you can fix this problem by making sure that your machine is configured according to a US numeric locale.
+You can fix this problem by making sure that your machine is configured according to a US numeric locale.
 Open the following file:
 
     sudo gedit /etc/default/locale
