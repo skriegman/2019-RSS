@@ -8,8 +8,8 @@ Automated shapeshifting for function recovery in damaged robots
 and 
 [Josh Bongard](https://scholar.google.com/citations?user=Dj-kPasAAAAJ).<br>
 
-<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserA.png" width="750"> <br>
-<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserB.png" width="750">
+<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserA.png" width="760"> <br>
+<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserB.png" width="760">
 
 <a href="http://www.roboticsproceedings.org/rss15/p28.pdf">Read the full paper.</a>
 
