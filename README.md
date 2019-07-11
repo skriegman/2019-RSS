@@ -75,12 +75,12 @@ Install the voxelyze library.
     cd ../voxelyzeMain/
     make
 
-Navigate back out to the exp folder and run one of the *.py with two args (seed and runtime):
+Navigate back out to the exp folder and run one of the *.py with two args (seed and runtime; let's set both to 1 for now):
     
     cd ../exp
     python RSS_0B_Half_Leg_XYZDB.py 1 1
 
-You should start seeing some output being produced in your console, and a new directory being created (evosoro/evosoro/basic_data), which contains the results of the simulation.
+You should start seeing some output being produced in your console, and a new directory being created (~/evosoro/evosoro/run_1), which contains the results of the simulation.
 
 
 After allowing the experiment to run for a few generations, you can view the shape/controller adaptation by opening up the generated .vxa files within the VoxCAD GUI. A .vxa file is just an XML file representing a robot that can be simulated by VoxCad/Voxelyze. Different versions of the physics engine can play slightly different .vxa files.
@@ -96,7 +96,7 @@ Then select the desired .vxa file from
 
     "File -> Import -> Simulation"
 
-The .vxa files for the best performing individuals will be saved in the working dir inside a run_* where * is the seed (we used 1 as the first arg)
+The .vxa files for the best performing individuals will be saved in
 
     evosoro/evosoro/exp/run_1/bestSoFar/fitOnly.
 
