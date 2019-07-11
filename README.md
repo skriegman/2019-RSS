@@ -75,15 +75,15 @@ Install the voxelyze library.
     cd ../voxelyzeMain/
     make
 
-Navigate back out to the exp folder and run one of the *.py with two args (seed and runtime; let's set both to 1 for now):
+Navigate back out to the exp folder and run one of the .py experiments (detailed in the paper) with two args (seed and runtime; let's set both to 1 for now):
     
     cd ../exp
     python RSS_0B_Half_Leg_XYZDB.py 1 1
 
-You should start seeing some output being produced in your console, and a new directory being created (~/2019-RSS/evosoro/run_1), which contains the results of the simulation.
+You should start seeing output in your console, and a newly created directory (~/2019-RSS/evosoro/run_1), which contains the results of the simulation.
 
 
-After allowing the experiment to run for a few generations, you can view the shape/controller adaptation by opening up the generated .vxa files within the VoxCAD GUI. A .vxa file is just an XML file representing a robot that can be simulated by VoxCad/Voxelyze.
+After allowing the experiment to run for a few generations, you can view the current shape/controller adaptation by opening up the generated .vxa files within the VoxCAD GUI. A .vxa file is just an XML file representing a robot that can be simulated by VoxCad/Voxelyze.
 Navigate to 2019-RSS/evosoro/_voxcad/release:
     
     cd ../_voxcad/release
