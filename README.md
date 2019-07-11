@@ -1,6 +1,7 @@
 Automated shapeshifting for function recovery in damaged robots
 --------------------
 Sam Kriegman, Stephanie Walker, Dylan Shah, Michael Levin, Rebecca Kramer-Bottiglio, Josh Bongard.<br>
+
 <img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserA.png" width="800"> <br>
 <img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserB.png" width="800">
 
