@@ -29,9 +29,9 @@ Bibtex
 Installation
 ------------
 
-Install [Anaconda](https://docs.continuum.io/anaconda/install#) as your Python (2.7) distribution. Anaconda includes the following required packages: scipy, numpy, networkx, decorator.
+The first step is to install [Anaconda](https://docs.continuum.io/anaconda/install#) as your Python 2.7 distribution on a linux machine.
 
-networkx must be <2.0. When networkx updated 1.0-->2.0 some function changed and I haven't updated the python code to reflect this change.
+Next, networkx must be <2.0. When networkx updated 1.0-->2.0 some function changed and I haven't updated the python code to reflect this change.
 
     pip install networkx==1.11
 
@@ -100,7 +100,7 @@ The .vxa files for the best performing individuals will be saved in:
 
     2019-RSS/evosoro/exp/run_1/bestSoFar/fitOnly.
 
-Once the design is loaded, you can start the physics simulation by clicking the <img src="https://github.com/skriegman/2019-RSS/blob/master/evosoro/_voxcad/VoxCad/Icons/Sandbox.png" height="25" width="25"> icon in the top bar ("Physics Sandbox").
+Once the robot is loaded, you can start the physics simulation by clicking the <img src="https://github.com/skriegman/2019-RSS/blob/master/evosoro/_voxcad/VoxCad/Icons/Sandbox.png" height="25" width="25"> icon in the top bar ("Physics Sandbox").
 
 
 Known issues
