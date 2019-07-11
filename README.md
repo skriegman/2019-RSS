@@ -5,8 +5,8 @@ In Proceedings of _Robotics: Science and Systems (RSS)_, 2019. <br>
 June 22-26, 2019. Freiburg im Breisgau, Germany.<br>
 
 
-<img src="https://github.com/skriegman/RSS-2019/blob/master/evosoro/misc/teaserA.png" width="500"> <br>
-<img src="https://github.com/skriegman/RSS-2019/blob/master/evosoro/misc/teaserB.png" width="500">
+<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserA.png" width="500"> <br>
+<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserB.png" width="500">
 
 <a href="http://www.roboticsproceedings.org/rss15/p28.pdf">Read the full paper.</a>
 
