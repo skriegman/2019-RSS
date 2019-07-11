@@ -13,15 +13,16 @@ June 22-26, 2019. Freiburg im Breisgau, Germany.<br>
 
 Bibtex
 ------------
-
-@inproceedings{kriegman2019automated, <br> 
-&nbsp;&nbsp; author={Kriegman, Sam and Walker, Stephanie and Shah, Dylan and Levin, Michael and Kramer-Bottiglio, Rebecca and Bongard, Josh}, <br>
-&nbsp;&nbsp; title={Automated shapeshifting for function recovery in damaged robots}, <br>
-&nbsp;&nbsp; booktitle={Proceedings of Robotics: Science and Systems}, <br>
-&nbsp;&nbsp; year={2019}, <br>
-&nbsp;&nbsp; doi={10.15607/RSS.2019.XV.028}, <br>
-&nbsp;&nbsp; url={<a href="http://www.roboticsproceedings.org/rss15/p28.pdf">http://www.roboticsproceedings.org/rss15/p28.pdf</a>} <br>
-} <br>
+<pre>
+@inproceedings{kriegman2019automated,
+&nbsp;&nbsp; author={Kriegman, Sam and Walker, Stephanie and Shah, Dylan and Levin, Michael and Kramer-Bottiglio, Rebecca and Bongard, Josh},
+&nbsp;&nbsp; title={Automated shapeshifting for function recovery in damaged robots},
+&nbsp;&nbsp; booktitle={Proceedings of Robotics: Science and Systems},
+&nbsp;&nbsp; year={2019},
+&nbsp;&nbsp; doi={10.15607/RSS.2019.XV.028},
+&nbsp;&nbsp; url={<a href="http://www.roboticsproceedings.org/rss15/p28.pdf">http://www.roboticsproceedings.org/rss15/p28.pdf</a>}
+}
+</pre>
 
 
 Installation
