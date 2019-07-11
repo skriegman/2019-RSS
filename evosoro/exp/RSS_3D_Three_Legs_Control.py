@@ -12,10 +12,8 @@ from evosoro.tools.checkpointing import continue_from_checkpoint
 from evosoro.tools.utils import quadruped
 
 
-SIMULATOR_DIR = "~/pkg/research_code/evosoro/_voxcad"
-PICKLE_DIR = "/users/s/k/skriegma/scratch/quadrupeds"
-# SIMULATOR_DIR = "../_voxcad"
-# PICKLE_DIR = "/home/sam"
+SIMULATOR_DIR = "../_voxcad"
+PICKLE_DIR = "../pretrained/quadrupeds"
 
 SEED = int(sys.argv[1])
 MAX_TIME = float(sys.argv[2])
@@ -23,7 +21,7 @@ MAX_TIME = float(sys.argv[2])
 # MAX_TIME = 1
 
 PICKLE_GEN = 1500
-PICKLE = "{0}/run_{1}/pickledPops/Gen_{2}.pickle".format(PICKLE_DIR, (SEED-1) % 5 + 1, PICKLE_GEN)
+PICKLE = "{0}/run_{1}/Gen_{2}.pickle".format(PICKLE_DIR, (SEED-1) % 5 + 1, PICKLE_GEN)
 
 QUAD_SIZE = (6, 6, 5)
 IND_SIZE = QUAD_SIZE

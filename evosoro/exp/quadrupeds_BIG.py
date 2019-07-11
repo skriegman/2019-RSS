@@ -12,7 +12,7 @@ from evosoro.tools.checkpointing import continue_from_checkpoint
 from evosoro.tools.utils import one_muscle, quadruped
 
 
-sub.call("cp ~/pkg/research_code/evosoro/_voxcad/voxelyzeMain/voxelyze .", shell=True)
+sub.call("cp ../_voxcad/voxelyzeMain/voxelyze .", shell=True)
 sub.call("chmod 755 voxelyze", shell=True)
 
 SEED = int(sys.argv[1])

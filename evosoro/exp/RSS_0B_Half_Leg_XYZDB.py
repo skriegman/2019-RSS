@@ -6,17 +6,15 @@ import numpy as np
 import subprocess as sub
 
 from evosoro.base import Sim, Env, ObjectiveDict
-from evosoro.networks import DirectEncoding, CPPN, GeneralizedCPPN
+from evosoro.networks import DirectEncoding, CPPN
 from evosoro.softbot import Genotype, Phenotype, Population
 from evosoro.tools.algorithms import ParetoOptimization
 from evosoro.tools.checkpointing import continue_from_checkpoint
-from evosoro.tools.utils import quadruped, count_neighbors
+from evosoro.tools.utils import quadruped
 
 
-SIMULATOR_DIR = "~/pkg/research_code/evosoro/_voxcad"
-PICKLE_DIR = "/users/s/k/skriegma/scratch/quadrupeds"
-# SIMULATOR_DIR = "../_voxcad"
-# PICKLE_DIR = "/home/sam"
+SIMULATOR_DIR = "../_voxcad"
+PICKLE_DIR = "../pretrained/quadrupeds"
 
 SEED = int(sys.argv[1])
 MAX_TIME = float(sys.argv[2])
@@ -24,7 +22,7 @@ MAX_TIME = float(sys.argv[2])
 # MAX_TIME = 1
 
 PICKLE_GEN = 1500
-PICKLE = "{0}/run_{1}/pickledPops/Gen_{2}.pickle".format(PICKLE_DIR, (SEED-1) % 5 + 1, PICKLE_GEN)
+PICKLE = "{0}/run_{1}/Gen_{2}.pickle".format(PICKLE_DIR, (SEED-1) % 5 + 1, PICKLE_GEN)
 
 QUAD_SIZE = (6, 6, 5)
 IND_SIZE = QUAD_SIZE
@@ -80,36 +78,6 @@ CONTROLLER = np.rot90(CONTROLLER_0, k=(SEED-1)/5, axes=(0, 1))
 
 pre_damage_shape = quadruped(QUAD_SIZE)
 post_damage_shape = quadruped(QUAD_SIZE, cut_leg=0, patch_mat=0, half_cut=True)
-
-
-# calculate manhattan distance from the site of damage
-geom_new = np.array(post_damage_shape > 0, dtype=int)
-geom_old = np.array(pre_damage_shape > 0, dtype=int)
-geom_diff = geom_old - geom_new
-
-first_block = np.reshape(count_neighbors(geom_diff), IND_SIZE)
-first_block[np.where(geom_new == 0)] = 0
-already_counted = np.array(first_block > 0, dtype=int)
-blocks = [first_block]
-n = 1
-while True:
-    this_block = np.reshape(count_neighbors(blocks[n-1]), IND_SIZE)
-    this_block[np.where(geom_new == 0)] = 0
-    this_block[np.where(this_block > 0)] = 1
-    this_block[np.where(already_counted > 0)] = 0
-    already_counted += this_block
-    blocks += [this_block]
-    n += 1
-
-    if np.sum(already_counted - geom_new) == 0:
-        break
-
-manhattan = np.zeros(IND_SIZE)
-for n, b in enumerate(blocks):
-    manhattan += n*b
-
-# print n-1
-# print manhattan
 
 MyGenotype.NET_DICT = {"phase_offset": CONTROLLER, "material": post_damage_shape}
 
