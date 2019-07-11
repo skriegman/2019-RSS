@@ -83,7 +83,7 @@ Navigate back out to the exp folder and run one of the .py experiments (detailed
 You should start seeing output in your console, and a newly created directory (~/2019-RSS/evosoro/run_1), which contains the results of the simulation.
 
 
-After allowing the experiment to run for a few generations, you can view the current shape/controller adaptation by opening up the generated .vxa files within the VoxCAD GUI. A .vxa file is just an XML file representing a robot that can be simulated by VoxCad/Voxelyze.
+After allowing the experiment to run for a few generations, you can view the current shape/controller adaptation by opening one of the generated .vxa files within the VoxCAD GUI. A .vxa file is just an XML file representing a robot that can be simulated by VoxCad/Voxelyze.
 Navigate to 2019-RSS/evosoro/_voxcad/release:
     
     cd ../_voxcad/release
@@ -107,7 +107,7 @@ Known issues
 --------
 
 If the robot does not move, disappears, or behaves weirdly when running a .vxa file in VoxCad (GUI), you may be affected by a known problem observed on some non-US machines.
-The problem is due to an unexpected behavior of the <a href="http://www.cplusplus.com/reference/cstdlib/atof/">atof</a> function when the system's numeric <a href="https://en.wikipedia.org/wiki/Locale_(computer_software)">locale</a> differs from en_US.UTF-8, which entails loading wrong parameters from the .vxa file (in some cases it was observed how the atof function was approximating all double and floating point values to their integer part, which was the cause of the unexpected behavior).
+The problem is due to the <a href="http://www.cplusplus.com/reference/cstdlib/atof/">atof</a> function when the system's numeric <a href="https://en.wikipedia.org/wiki/Locale_(computer_software)">locale</a> differs from en_US.UTF-8, and can cause double and floating point values in the .vxa to be read as integers.
 
 You can fix this problem by making sure that your machine is configured according to a US numeric locale.
 Open the following file:
