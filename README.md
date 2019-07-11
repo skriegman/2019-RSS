@@ -20,7 +20,7 @@ Bibtex
 &nbsp;&nbsp;&nbsp;&nbsp; booktitle={Proceedings of Robotics: Science and Systems}, <br>
 &nbsp;&nbsp;&nbsp;&nbsp; year={2019}, <br>
 &nbsp;&nbsp;&nbsp;&nbsp; doi={10.15607/RSS.2019.XV.028}, <br>
-&nbsp;&nbsp;&nbsp;&nbsp; url={http://www.roboticsproceedings.org/rss15/p28.pdf} <br>
+&nbsp;&nbsp;&nbsp;&nbsp; url={<a href="http://www.roboticsproceedings.org/rss15/p28.pdf">http://www.roboticsproceedings.org/rss15/p28.pdf</a>} <br>
 } <br>
 
 
