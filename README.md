@@ -8,14 +8,14 @@ Automated shapeshifting for function recovery in damaged robots
 and 
 [Josh Bongard](https://scholar.google.com/citations?user=Dj-kPasAAAAJ).<br>
 
-<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserA.png" width="760"> <br>
-<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserB.png" width="760">
+<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserA.png" width="750"> <br>
+<img src="https://github.com/skriegman/2019-RSS/blob/master/misc/teaserB.png" width="750">
 
 <a href="http://www.roboticsproceedings.org/rss15/p28.pdf">Read the full paper.</a>
 
-<a href="https://youtu.be/fFIDz8maVh0">Watch an annotated summary video.</a>
+<a href="https://youtu.be/fFIDz8maVh0">Watch an annotated video summary.</a>
 
-<a href="https://youtu.be/stYJ1Miesk4">Watch the oral presentation from RSS (4 mins).</a>
+<a href="https://youtu.be/stYJ1Miesk4">Listen to the oral presentation from RSS (4 mins).</a>
 
 
 Bibtex
@@ -51,7 +51,7 @@ Install git.
 
     sudo apt-get install git
 
-Navigate to your working directory (e.g., your home).
+Navigate to the working directory (e.g., your home).
 
     cd ~
 
@@ -79,7 +79,8 @@ Install the voxelyze library.
     cd ../voxelyzeMain/
     make
 
-Navigate back one level to the exp folder and run one of the .py experiments (detailed in the paper) with two args (seed and runtime), both of which can be set to 1 for now.
+Navigate to the exp folder and run one of the .py experiments (detailed in the paper),
+which require two input args (seed and runtime), both of which can be set to 1 for now.
     
     cd ../exp
     python RSS_0B_Half_Leg_XYZDB.py 1 1
@@ -112,7 +113,7 @@ The .vxa files for the best performing individuals will be saved in:
 Once the robot is loaded, you can start the physics simulation by clicking the <img src="https://github.com/skriegman/2019-RSS/blob/master/evosoro/_voxcad/VoxCad/Icons/Sandbox.png" height="25" width="25"> icon in the top bar ("Physics Sandbox").
 
 
-Known issues with non-US machines
+A known issue with non-US machines
 --------
 
 If the system's numeric 
@@ -125,13 +126,11 @@ as integers.
 This will cause the robot not to move, disappear, or just behave strangely 
 when running a .vxa file in VoxCad.
 
-
-To fix this problem, reconfigure the computer according to a US numeric locale.
-Open the following file:
+To fix this issue, open the locale settings.
 
     sudo gedit /etc/default/locale
 
-Make sure that LC_NUMERIC is set as follows:
+Set LC_NUMERIC to en_US.UTF-8.
 
     LC_NUMERIC="en_US.UTF-8"
 
@@ -141,6 +140,6 @@ Save, close the file, and reboot.
 Documentation
 -------------
 
-Voxelyze documentation, available [here](http://jonhiller.github.io/Voxelyze/annotated.html).
+Voxelyze documentation is available [here](http://jonhiller.github.io/Voxelyze/annotated.html).
 
 
