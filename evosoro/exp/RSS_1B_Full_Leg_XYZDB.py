@@ -90,12 +90,15 @@ class MyGenotype(Genotype):
     def __init__(self):
         Genotype.__init__(self, orig_size_xyz=IND_SIZE)
 
+        # pre-optimized controller (phi; phase-offsets)
         self.add_network(DirectEncoding(output_node_name="phase_offset", orig_size_xyz=IND_SIZE), freeze=True)
         self.to_phenotype_mapping.add_map(name="phase_offset", tag="<PhaseOffset>", logging_stats=None)
 
+        # quadrupedal structure
         self.add_network(DirectEncoding(output_node_name="material", orig_size_xyz=IND_SIZE), freeze=True)
         self.to_phenotype_mapping.add_map(name="material", tag="<Data>", output_type=int, logging_stats=None)
 
+        # shape (b; beam lengths)
         self.add_network(CPPN(output_node_names=["init_size"]))
         self.to_phenotype_mapping.add_map(name="init_size", tag="<InitialVoxelSize>")
 

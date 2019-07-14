@@ -62,9 +62,11 @@ class MyGenotype(Genotype):
     def __init__(self):
         Genotype.__init__(self, orig_size_xyz=IND_SIZE)
 
+        # quadrupedal structure
         self.add_network(DirectEncoding(output_node_name="material", orig_size_xyz=IND_SIZE), freeze=True)
         self.to_phenotype_mapping.add_map(name="material", tag="<Data>", output_type=int, logging_stats=None)
 
+        # controller (phi; phase-offsets)
         self.add_network(CPPN(output_node_names=["phase_offset"]))
         self.to_phenotype_mapping.add_map(name="phase_offset", tag="<PhaseOffset>")
 
