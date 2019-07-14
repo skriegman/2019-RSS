@@ -12,7 +12,7 @@ from evosoro.tools.checkpointing import continue_from_checkpoint
 from evosoro.tools.utils import quadruped
 
 
-SIMULATOR_DIR = "../_voxcad"
+SIMULATOR_DIR = "../../_voxcad"
 PICKLE_DIR = "../pretrained/quadrupeds"
 
 SEED = int(sys.argv[1])
