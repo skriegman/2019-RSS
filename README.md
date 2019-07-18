@@ -13,6 +13,8 @@ and
 
 <a href="http://www.roboticsproceedings.org/rss15/p28.pdf">Read the full paper.</a>
 
+<a href="https://www.nature.com/articles/s42256-019-0076-6.epdf?author_access_token=R-S3FjSBIhUsomuDvARA7dRgN0jAjWel9jnR3ZoTv0OIXKmCfd5tDZfG1f8Y5jvWw1CSopZsGNYUdE_VbrVz-w5iIfuBDqNnm4FKFVTmuh3hNAJu38EzDsJc8di2AANa1jSA3LV3Q3Vd-wov1l5Amw%3D%3D">Read a perspective article on this work, published in Nature Machine Intelligence.</a>
+
 <a href="https://youtu.be/fFIDz8maVh0">Watch an annotated video summary.</a>
 
 <a href="https://youtu.be/stYJ1Miesk4">Listen to the oral presentation from RSS (4 mins).</a>
