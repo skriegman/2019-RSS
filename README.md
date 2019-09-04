@@ -112,7 +112,7 @@ The .vxa files for the best performing individuals will be saved in:
 
     2019-RSS/evosoro/exp/run_1/bestSoFar/fitOnly.
 
-Once the robot is loaded, you can start the physics simulation by clicking the <img src="https://github.com/skriegman/2019-RSS/blob/master/evosoro/_voxcad/VoxCad/Icons/Sandbox.png" height="25" width="25"> icon in the top bar ("Physics Sandbox").
+Once the robot is loaded, you can start the physics simulation by clicking the <img src="https://github.com/skriegman/2019-RSS/blob/master/_voxcad/VoxCad/Icons/Sandbox.png" height="25" width="25"> icon in the top bar ("Physics Sandbox").
 
 
 A known issue with non-US machines
