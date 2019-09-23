@@ -85,7 +85,7 @@ Navigate to the exp folder and run one of the .py experiments (detailed in the p
 which require two input args (seed and runtime), both of which can be set to 1 for now.
     
     cd ../exp
-    python RSS_0B_Half_Leg_XYZDB.py 1 1
+    PYTHONPATH=$HOME/2019-RSS/ $HOME/anaconda/bin/python RSS_0B_Half_Leg_XYZDB.py 1 1
 
 This creates a directory (~/2019-RSS/evosoro/run_1) to hold the results.
 
