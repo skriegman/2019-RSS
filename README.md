@@ -64,7 +64,7 @@ Clone the repo.
 
 Navigate to the _voxcad directory.
 
-    cd 2019-RSS/evosoro/_voxcad/
+    cd 2019-RSS/_voxcad/
 
 Compile both VoxCad (GUI) and Voxelyze (physics engine).
 
