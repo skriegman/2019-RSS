@@ -78,7 +78,6 @@ Install the voxelyze library.
 
     cd Voxelyze
     make
-    make installusr
     cd ../voxelyzeMain/
     make
 
